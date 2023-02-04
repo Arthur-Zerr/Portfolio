@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Kanya";
+  src: local("Kanya"), url(./assets/fonts/Kanya.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: local("OpenSans-Bold"), url(./assets/fonts/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: local("OpenSans-Regular"), url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+body {
+  @apply bg-portfolioBg;
+  @apply dark:bg-portfolioBgDark;
+}

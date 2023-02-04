@@ -1,0 +1,50 @@
+<div class="w-full max-w-fullHd">
+  <div class="h-screen">
+    <!--  Header -->
+    <div class="sticky flex justify-end top-0">
+      <!-- Github link -->
+      <a href="https://github.com/Arthur-Zerr" target="_blank">
+        <div
+          class="rounded-lg bg-widgetBg dark:bg-widgetBgDark shadow-widget m-3 text-black dark:text-white cursor-pointer text-1xl md:text-2xl lg:md:text-3xl xl:text-4xl">
+          <div class="py-2 px-3">
+            <ng-icon name="simpleGithub"></ng-icon>
+          </div>
+        </div>
+      </a>
+      <!-- LinkedIn link -->
+      <a href="https://www.linkedin.com/in/arthur-zerr-546310264/" target="_blank">
+        <div
+          class="rounded-lg bg-widgetBg dark:bg-widgetBgDark shadow-widget m-3 text-black dark:text-white cursor-pointer text-1xl md:text-2xl lg:md:text-3xl xl:text-4xl">
+          <div class="py-2 px-3">
+            <ng-icon name="simpleLinkedin"></ng-icon>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Body -->
+    <div class="h-full grid">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="flex justify-center items-center">
+          <div class="p-5 grid text-center text-black dark:text-white">
+            <span class="text-6xl xl:text-8xl font-OpenSans-Bold"> Arthur Zerr </span>
+            <span class="text-2xl xl:text-4xl font-OpenSans"> Software Entwickler aus Rüsselsheim am Main</span>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <app-picture-Widget data-aos="fade-left" [pictureSrc]="['../assets/images/profilepicture.jpeg']">
+          </app-picture-Widget>
+        </div>
+      </div>
+
+      <div class="grid justify-center content-center">
+        <svg class="animate-bounce pb-4 fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true" focusable="false" width="5em" height="5em"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
+          <path d="M5 6l5 5l5-5l2 1l-7 7l-7-7z"></path>
+          <rect x="0" y="0" width="20" height="20" fill="rgba(0, 0, 0, 0)"></rect>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
