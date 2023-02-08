@@ -8,9 +8,10 @@ import { NgIconsModule } from "@ng-icons/core";
 import { PictureWidgetComponent } from './components/picture-Widget/picture-Widget.component';
 import { HomeViewComponent } from './views/home-View/home-View.component';
 import { TechnologyViewComponent } from './views/technology-View/technology-View.component';
+import { ConfiguratorViewComponent } from './views/configurator-View/configurator-View.component';
 
 import { simpleGithub, simpleLinkedin, simpleDotnet } from '@ng-icons/simple-icons';
-import { ConfiguratorViewComponent } from './views/configurator-View/configurator-View.component';
+import { EproViewComponent } from './views/epro-View/epro-View.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ConfiguratorViewComponent } from './views/configurator-View/configurato
     PictureWidgetComponent,
     HomeViewComponent,
     TechnologyViewComponent,
-    ConfiguratorViewComponent
+    ConfiguratorViewComponent,
+    EproViewComponent
   ],
   imports: [
     BrowserModule,
