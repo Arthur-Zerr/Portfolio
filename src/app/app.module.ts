@@ -9,7 +9,8 @@ import { PictureWidgetComponent } from './components/picture-Widget/picture-Widg
 import { HomeViewComponent } from './views/home-View/home-View.component';
 import { TechnologyViewComponent } from './views/technology-View/technology-View.component';
 
-import { simpleGithub, simpleLinkedin, simpleDotnet} from '@ng-icons/simple-icons';
+import { simpleGithub, simpleLinkedin, simpleDotnet } from '@ng-icons/simple-icons';
+import { ConfiguratorViewComponent } from './views/configurator-View/configurator-View.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { simpleGithub, simpleLinkedin, simpleDotnet} from '@ng-icons/simple-icon
     WidgetComponent,
     PictureWidgetComponent,
     HomeViewComponent,
-    TechnologyViewComponent
+    TechnologyViewComponent,
+    ConfiguratorViewComponent
   ],
   imports: [
     BrowserModule,
