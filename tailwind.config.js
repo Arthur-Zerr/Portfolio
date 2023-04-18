@@ -11,6 +11,8 @@ module.exports = {
       },
       boxShadow: {
         "widget": "0px 0px 15px 4px rgba(0, 0, 0, 0.3)",
+        "widgetHover": "0px 0px 15px 4px rgba(128, 128, 128, 0.3)",
+
       },
       colors: {
         'portfolioBg': '#ffffff',

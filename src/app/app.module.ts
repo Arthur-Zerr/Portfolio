@@ -12,6 +12,8 @@ import { ConfiguratorViewComponent } from './views/configurator-View/configurato
 
 import { simpleGithub, simpleLinkedin, simpleDotnet } from '@ng-icons/simple-icons';
 import { EproViewComponent } from './views/epro-View/epro-View.component';
+import { GatewayViewComponent } from './views/gateway-view/gateway-View.component';
+import { PolyengineViewComponent } from './views/polyengine-view/polyengine-view.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EproViewComponent } from './views/epro-View/epro-View.component';
     HomeViewComponent,
     TechnologyViewComponent,
     ConfiguratorViewComponent,
-    EproViewComponent
+    EproViewComponent,
+    GatewayViewComponent,
+    PolyengineViewComponent
   ],
   imports: [
     BrowserModule,

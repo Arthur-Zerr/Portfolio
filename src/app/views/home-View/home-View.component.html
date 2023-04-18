@@ -26,10 +26,23 @@
     <div class="h-full grid">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="flex justify-center items-center">
-          <div class="p-5 grid text-center text-black dark:text-white">
-            <span class="text-6xl xl:text-8xl font-OpenSans-Bold"> Arthur Zerr </span>
-            <span class="text-2xl xl:text-4xl font-OpenSans"> Software Entwickler</span>
+          <div class="grid grid-flow-row">
+            <div class="p-5 grid text-center text-black dark:text-white">
+              <span class="text-6xl xl:text-8xl font-OpenSans-Bold"> Arthur Zerr </span>
+              <span class="text-2xl xl:text-4xl font-OpenSans"> Software Entwickler</span>
+            </div>
+            <div class="">
+              <pre id="typewriter"
+                   class="text-black dark:text-white p-5 text-xs sm:text-base md:text-xl xl:text-2xl 2xl:text-3xl ">
+<span class="var-highlight">var</span> <span class="object-highlight">ArthurZerr</span> <span class="var-highlight">= new</span> <span
+                class="object-highlight">Person</span> &#123;
+        alter <span class="var-highlight">=</span> <span class="string-highlight">22</span>,
+        stadt <span class="var-highlight">=</span> <span class="string-highlight">"Ruesselsheim am Main"</span>,
+        land <span class="var-highlight">=</span> <span class="string-highlight">"Deutschland"</span>
+      };</pre>
+            </div>
           </div>
+
         </div>
         <div class="flex justify-center items-center">
           <app-picture-Widget data-aos="fade-left" [pictureSrc]="['../assets/images/profilepicture.jpeg']">
