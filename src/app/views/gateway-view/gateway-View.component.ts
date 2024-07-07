@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gateway-View',
-  templateUrl: './gateway-View.component.html',
-  styleUrls: ['./gateway-View.component.scss']
+  selector: 'az-gateway-View',
+  templateUrl: './gateway-View.component.html'
 })
 export class GatewayViewComponent {
 

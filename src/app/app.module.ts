@@ -14,6 +14,11 @@ import { simpleGithub, simpleLinkedin, simpleDotnet } from '@ng-icons/simple-ico
 import { EproViewComponent } from './views/epro-View/epro-View.component';
 import { GatewayViewComponent } from './views/gateway-view/gateway-View.component';
 import { PolyengineViewComponent } from './views/polyengine-view/polyengine-view.component';
+import { EproconfiguratorViewComponent } from './views/eproconfigurator-view/eproconfigurator-view.component';
+import { MindofspaceViewComponent } from './views/mindofspace-view/mindofspace-view.component';
+import { ProjectyViewComponent } from './views/projecty-view/projecty-view.component';
+import { NgOptimizedImage } from "@angular/common";
+import { ProjectyWebViewComponent } from './views/projecty-web-view/projecty-web-view.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +30,18 @@ import { PolyengineViewComponent } from './views/polyengine-view/polyengine-view
     ConfiguratorViewComponent,
     EproViewComponent,
     GatewayViewComponent,
-    PolyengineViewComponent
+    PolyengineViewComponent,
+    EproconfiguratorViewComponent,
+    MindofspaceViewComponent,
+    ProjectyViewComponent,
+    ProjectyWebViewComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgIconsModule.withIcons({ simpleGithub, simpleLinkedin, simpleDotnet }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgIconsModule.withIcons({simpleGithub, simpleLinkedin, simpleDotnet}),
+        NgOptimizedImage,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

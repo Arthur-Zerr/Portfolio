@@ -1,8 +1,27 @@
 <div class="">
-
   <!-- Full-width images with number and caption text -->
-  <div class="shadow-widget rounded-lg" *ngFor="let pictureSrc of this.pictureSrc">
-    <img class="shadow-widget rounded-lg" [src]="pictureSrc" alt=""/>
+  <div class="shadow-2xl rounded-lg relative">
+    <div class="absolute top-1/2 left-10 cursor-pointer" (click)="this.previousPicture()"
+         *ngIf="this.pictureSrc.length > 1">
+      <img ngSrc="./assets/icons/back.svg" height="24" width="24" alt="back"/>
+    </div>
+    <div class="absolute top-1/2 right-10 cursor-pointer" (click)="this.nextPicture()"
+         *ngIf="this.pictureSrc.length > 1">
+      <img ngSrc="./assets/icons/forward.svg" height="24" width="24" alt="forward"/>
+    </div>
+    <img class="shadow-md rounded-lg" [src]="this.getCurrentSrc()" alt=""/>
   </div>
-
+  <div class="flex flex-row items-center justify-center p-1" *ngIf="this.pictureSrc.length > 1">
+    <div *ngFor="let i of this.pictureSrc" class="cursor-pointer">
+      <img *ngIf="this.getCurrentSrc() === i else other" class="invert dark:invert-0"
+           ngSrc="./assets/icons/radio_button_checked.svg" height="24"
+           width="24"
+           alt="image checked"/>
+      <ng-template #other>
+        <img id="other" #other ngSrc="./assets/icons/radio_button_unchecked.svg" height="24" width="24"
+             class="invert dark:invert-0" (click)="this.selectPicture(i)"
+             alt=" image unchecked"/>
+      </ng-template>
+    </div>
+  </div>
 </div>
