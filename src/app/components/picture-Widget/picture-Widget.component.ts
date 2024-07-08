@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 export class PictureWidgetComponent {
 
   @Input() pictureSrc: string[] = [];
-
   currentIndex: number = 0;
 
   getCurrentSrc(): string {
